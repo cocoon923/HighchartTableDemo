@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>HighchartTableDemo</title>
+</head>
+<body>
+
+<table id="tableChart" class="dataTable highchart" data-graph-container-before="1" data-graph-type="pie" role="grid"
+       style="width: 1134px;">
+    <thead>
+    <tr role="row">
+        <th class="sorting_asc" tabindex="0" aria-controls="tableChart" rowspan="1" colspan="1"
+            aria-label="版本号: activate to sort column ascending" aria-sort="ascending" style="width: 67px;">版本号
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="tableChart" rowspan="1" colspan="1"
+            aria-label="测试人员: activate to sort column ascending" style="width: 88px;">测试人员
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="tableChart" rowspan="1" colspan="1"
+            aria-label="需求名称: activate to sort column ascending" style="width: 342px;">需求名称
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="tableChart" rowspan="1" colspan="1"
+            aria-label="测试时间: activate to sort column ascending" style="width: 88px;">测试时间
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="tableChart" rowspan="1" colspan="1"
+            aria-label="需求ID: activate to sort column ascending" style="width: 68px;">需求ID
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="tableChart" rowspan="1" colspan="1"
+            aria-label="地区: activate to sort column ascending" style="width: 48px;">地区
+        </th>
+        <th class="sorting" tabindex="0" aria-controls="tableChart" rowspan="1" colspan="1"
+            aria-label="数据: activate to sort column ascending" style="width: 181px;">数据
+        </th>
+    </tr>
+    </thead>
+    <tfoot>
+    <tr>
+        <th rowspan="1" colspan="1">版本号</th>
+        <th rowspan="1" colspan="1">测试人员</th>
+        <th rowspan="1" colspan="1">需求名称</th>
+        <th rowspan="1" colspan="1">测试时间</th>
+        <th rowspan="1" colspan="1">需求ID</th>
+        <th rowspan="1" colspan="1">地区</th>
+        <th rowspan="1" colspan="1">数据</th>
+    </tr>
+    </tfoot>
+    <tbody>
+    <tr role="row" class="odd">
+        <td class="sorting_1">1</td>
+        <td>严卫国</td>
+        <td>NP Gateway接口</td>
+        <td>2014-08-29</td>
+        <td>163</td>
+        <td>丹麦</td>
+        <td>35.753568791616026</td>
+    </tr>
+    <tr role="row" class="even">
+        <td class="sorting_1">1</td>
+        <td>严卫国</td>
+        <td>UIP系统WebService调用日志记录并入库</td>
+        <td>2014-07-18</td>
+        <td>161</td>
+        <td>丹麦</td>
+        <td>18.56998481882978</td>
+    </tr>
+    </tbody>
+</table>
+
+<script src="jquery.js"></script>
+<script src="highcharts.js"></script>
+<script src="jquery.highchartTable.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('table.highchart').highchartTable();
+    });
+</script>
+</body>
+</html>
