@@ -1,0 +1,42 @@
+{"records": [
+    {
+        "plotOptions": {
+            "pie": {
+                "cursor": "pointer",
+                "dataLabels": {
+                    "enabled": false
+                },
+                "allowPointSelect": true,
+                "showInLegend": true
+            }
+        },
+        "series": [
+            {
+                "data": [
+                    {
+                        "name": "UIP系统WebService调用日志记录并入库",
+                        "y": 91.06091445032058740798688779003863923406
+                    },
+                    {
+                        "name": "NP  Gateway接口",
+                        "y": 14.10081979663748646647093485010621724958
+                    }
+                ],
+                "name": "testDatas",
+                "type": "pie"
+            }
+        ],
+        "tooltip": {
+            "pointFormat": "{series.name}: <b>{point.percentage:.1f}%<\/b>"
+        },
+        "title": {
+            "text": "统计部门完成工作"
+        },
+        "chart": {
+            "renderTo": "pieContainer",
+            "plotBackgroundColor": null,
+            "plotBorderWidth": null,
+            "plotShadow": false
+        }
+    }
+]}
